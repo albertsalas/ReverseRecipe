@@ -79,7 +79,17 @@ body{
     justify-content: space-around;
     display: flex;
     float: none;
-    
+}
+.edit{
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+    width:50%;
+    background-color: white;
 
 }
 
