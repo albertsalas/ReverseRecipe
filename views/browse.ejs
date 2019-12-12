@@ -3,18 +3,19 @@
 
 <head>
     <% include partials/header %>
+    <% include partials/navbar %>
         <title>Browse</title>
 </head>
     
 <body>
-    <% include partials/navbar %>
-    <div class="text-center">
+    
+    <div class="text-center animated fadeInLeft">
         <button type='button' class='btn btn-primary sort' value="ASC"> Sort Recipes by Ascending Likes</button>
         <button type='button' class='btn btn-primary sort' value="DESC"> Sort Recipes by Descending Likes</button>
     </div>
-    <div id="recipes" class="text-center">
+    <div id="recipes" class="text-center animated bounce">
         <% for(var i=0; i<results.length; i++) {%>
-            <div class='m-5 tileBackground'>
+            <div class='m-5 tileBackground animated fadeIn'>
                <button type='button' class='btn btn-primary recipeSummary' value="<%= results[i].recipe_name %>"> <%= results[i].recipe_name %></button>
                <h3 class="text-white">Likes: <%= results[i].likes %></h3>
                <img src="<%= results[i].image %>" width="25%">
